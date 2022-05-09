@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Apple.com clone website</title>
+    <link
+      rel="stylesheet"
+  
+    />
+    <style>
+      /* VARIABLES */
+      :root {
+        /* colors */
+        --color-black: #131313;
+        --color-white: #ffffff;
+        --color-primary: #0071e3;
+        --color-light: #fafafa;
+
+        /* spacing */
+        --space-s: 8px;
+        --space-m: 12px;
+        --space-l: 24px;
+      }
+      body {
+        font-family: sans-serif;
+        font-size: 14px;
+      }
+      nav {
+        position: fixed;
+        width: 100vw;
+        top: 0;
+      }
+      nav.dark {
+        background: rgba(0, 0, 0, 0.9);
+      }
+      .navgap {
+        margin-top: 44px;
+      }
+      nav,
+      .announcement {
+        display: flex;
+        align-items: center;
+        min-height: 44px;
+      }
+      .announcement.dark {
+        background: var(--color-primary);
+      }
+      .hero {
+        min-height: 300px;
+        background: var(--color-light);
+      }
+      .hero,
+      .grid {
+        margin-bottom: var(--space-m);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: var(--space-m);
+      }
+      .grid > div {
+        min-height: 300px;
+        background: var(--color-light);
+      }
+
+      footer {
+        background: #f5f5f7;
+      }
+
+      /* DARK UI */
+      .dark {
+        background: var(--color-black);
+        color: var(--color-white);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav class="dark">hello</nav>
+    <!-- announcement bars -->
+    <div class="announcement dark navgap">covid 19</div>
+    <div class="announcement">shop online</div>
+    <!-- hero sections -->
+    <section class="hero dark">iphone se</section>
+    <section class="hero">iphone 11</section>
+    <section class="hero">ipad pro</section>
+    <!-- announcement grid -->
+    <section class="grid">
+      <div>college</div>
+      <div>airpods</div>
+      <div>apple card</div>
+      <div>apple tv+</div>
+      <div>apple watch</div>
+      <div>reopening stores</div>
+      <div>hello world</div
+    </section>
+    <!-- footer -->
+    <footer>footer</footer>
+  </body>
+</html>

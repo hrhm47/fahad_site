@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Apple.com clone website</title>
+    <script src="https://kit.fontawesome.com/0b8cd28764.js" crossorigin="anonymous"></script>
+      
+    <style>
+      :root {
+        --color-black: #131313;
+        --color-white: #ffffff;
+        --color-primary: #0071e3;
+        --color-light: #fafafa;
+        --space-s: 8px;
+        --space-m: 12px;
+        --space-l: 24px;
+      }
+      body {
+        font-family: sans-serif;
+        font-size: 14px;
+        overflow-x: hidden;
+      }
+      nav {
+        position: fixed;
+        width: 100vw;
+        top: 0;
+        text-align: center;
+        padding-left: 20px;
+        cursor: pointer;
+        justify-content: center;
+      }
+      nav ul ol{
+          display: inline;
+      }
+      nav.dark {
+        background: #333333;
+        
+      }
+      .navgap {
+        margin-top: 44px;
+      }
+      nav,
+      .announcement {
+        display: flex;
+        align-items: center;
+        min-height: 44px;
+      }
+      .announcement.dark {
+        background:whitesmoke;
+      }
+      .hero {
+        min-height: 300px;
+        background: var(--color-light);
+      }
+      .hero,
+      .grid {
+        margin-bottom: var(--space-m);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: var(--space-s);
+      }
+      .grid > div {
+      height: 90%;
+       
+      }
+
+      footer {
+        background-color: whitesmoke;
+      
+      }
+      .dark {
+        color: var(--color-white);
+      }
+      .iphone{
+          width: 70%;
+      }
+      footer::before {
+        content: "";
+        position: relative;
+        left: 330px;
+        display: block;
+        width: 1050px;
+        height: 5px;
+        background-color: #478500;
+    }
+      footer::after {
+        content: "";
+        position: relative;
+        left: 330px;
+        display: block;
+        width: 1050px;
+        height: 5px;
+        background-color: #478500;
+    }
+    </style>
+  </head>
+  <body>
+    <nav class="dark"><i class="fa-brands fa-apple" style="font-size: large;"></i>
+        <ul>
+            <ol>
+                Store
+            </ol>
+            <ol>
+                Mac
+            </ol>
+            <ol>
+                iPad
+            </ol>
+            <ol>
+                iPhone
+            </ol>
+            <ol>
+                Watch
+            </ol>
+            <ol>
+                AirPods
+            </ol>
+            <ol>
+                TV & Home
+            </ol>
+            <ol>
+                Only on Apple
+            </ol>
+            <ol>
+                Accessories
+            </ol>
+            <ol>
+                Support
+            </ol>
+            <ol>
+              <i class="fa-solid fa-magnifying-glass" style="font-size: large;"></i> 
+          </ol>
+            <ol>
+              <i class="fa-solid fa-bag-shopping" style="font-size:large"></i>
+          </ol>
+        </ul>
+    </nav>
+    <div class="announcement dark navgap" style="justify-content: center; display: inline-flexbox; height: 20%;">
+      <img style="width: 5%; ;  padding-left: 100px;" src="unicef-1-logo-svg-vector.svg"> <a href="https://www.unicef.org/emergencies/war-ukraine-pose-immediate-threat-children?gclid=CjwKCAjwjtOTBhAvEiwASG4bCPidznh5uEnBgQVW2SMitAZveUPa-3bDdsaRvvIt0ok6-zBi3ZQO8xoC1DoQAvD_BwE" style="margin-right: 10%; font-size: x-large;margin: 20px;">Donate to support families affected by war in ukraine></a>
+       
+    </div>
+    <div class="announcement"></div>
+    <!-- hero sections -->
+    <section  style="align-items: center;">
+        <p style=" font-weight: bold;font-size: 60px; text-align: center;">iPhone 13 Pro</p>
+        <p style=" font-size: 50px;  text-align: center; ">Oh. So. Pro </p>
+        <p style=" font-size: 20px;  text-align: center;">From $41.62/mo. for 24 mo. or $999 before trade‑in1</p>
+        <p style="text-align: center; ">
+          <button type="button" style="background-color: #0071e3; border-radius: 20px ;width: 100px; height: 30px; cursor: pointer;font-weight: bold; font-size: 20px; color: white">Buy</button>
+          <a href="https://www.apple.com/iphone-13-pro/" style="font-size: 20px; margin: 20px; color: #0071e3;">Learn more ></a> </p>
+        <img src="Apple-iPhone13-Pro-alpine-green-hero-2up-220308_big_carousel.jpg.large_1646909085170_1648186667539.webp" 
+        style="justify-content: center; padding-left: 600px; background-color: white; height: 50%; width: 50%; cursor: pointer;"/>
+    </section>
+
+
+    <section class="hero">
+      <p style="text-align: center; font-weight: bold;">The new</p>
+      <p style="text-align: center; font-weight: bolder; font-size: 35px;">iPhone SE</p>
+      <p style="text-align: center;">Love the power.Love the price.</p>
+      <p style="text-align: center; ">
+          <button type="button" style="background-color: #0071e3; border-radius: 20px ;width: 100px; height: 30px; cursor: pointer;font-weight: bold; font-size: 20px; color: white">Buy</button>
+          <a href="https://www.apple.com/iphone-13-pro/" style="font-size: 20px; margin: 20px; color: #0071e3;">Learn more ></a> </p>
+          <img src="Apple-iPhoneSE-double-infinity-220308_Full-Bleed-Image.jpg.slideshow-xlarge.jpg" style="height: 50%; width: 50%; justify-content: center; padding-left: 600px;" >
+</section>
+    <section class="hero"> 
+      <p style="text-align: center; font-weight: bold; font-size: x-large;">Mother's Day</p>
+      <p style="text-align: center; font-weight: bold; font-size: 40px;" >Discover gifts that will</p>
+      <p style="text-align: center; font-weight: bold;font-size: 40px;">make Mom's year.</p>
+      <a href="https://www.apple.com/shop/campaigns/mothers-day" style="font-size: 20px; margin: 20px; color: #0071e3; text-align: center;padding-left: 47%;">shop ></a> </p>
+      <div style="display: flex; flex-direction: row;">
+        <div> <img src="d.jpg" style="padding-left: 210%;"></div>
+        <div> <img src="Gear-Apple-Airpods-3-2021-Review.webp" style="height: 80%;width: 25%;padding-left:45%;">
+        </div>
+        <div> <img src="apple-watch.webp" style="height: 35%; width: 50%; padding-right: 90%;">
+          <div>
+            <img src="images (1).jfif" style="padding-top: 5%;">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="grid">
+      <div> <img src="wwwdc-2022.webp "  style="height: 100%; width: 100%;" > 
+
+
+
+
+
+      </div>
+      <div> <img src="Apple_iPad_Air_5_knarzen_verarbeitung.jpg" style="height: 100%;">
+
+
+
+      </div>
+      <div style="background-color: #D17172; height: 100%; position: relative; "> 
+        
+        <img src="apple-watch.webp" style="height: auto; width: 50% ;position: relative;   ">
+        <div class="series7" style="position:relative; top: -18rem; left: 5rem;">
+       
+          <i class="fa-brands fa-apple" style="font-size: 30px; text-align: center;padding-left: 50%;"> Watch </i>  
+        <p style="font-size: 30px; text-align: center;padding-left: 10%;">series 7</p>
+        <p style="font-size: 30px; text-align: center;padding-left: 10%;">It's our largest display yet</p>
+        <p style="font-size: 30px; text-align: center;padding-left: 10%;">
+        <button type="button" style="background-color: #0071e3; border-radius: 20px ;width: 100px;  cursor: pointer;font-weight: bold; font-size: 20px; color: white">Buy</button>
+          <a href="https://www.apple.com/iphone-13-pro/" style="font-size: 20px;  color: #0071e3;">Learn more ></a> </p>
+
+        </div>  
+
+
+      </div>
+      
+      <div style="position: relative; height: 100%;"> 
+        <div class="buttons" style="position:relative; display:flex; justify-content: center; align-items: center; flex-direction: column;">
+          <h1>Iphone 13</h1>
+          <h3>Your new SuperPower</h3>
+          <div class="two_btn">
+            <a href="#">Learn more</a>
+            <a href="#">Buy</a>
+          </div>
+        </div>
+        <div class="image" style="height: 100%; width: 100%; ">
+          <img src="Apple-iPhone13-Pro-alpine-green-hero-2up-220308_big_carousel.jpg.large_1646909085170_1648186667539.webp"  >
+        </div>
+      </div>
+      
+      <div style="position: relative; height: 100%;"> 
+        <div class="buttons" style="position:relative; display:flex; justify-content: center; align-items: center; flex-direction: column;">
+          <h1>Iphone 13</h1>
+          <h3>Your new SuperPower</h3>
+          <div class="two_btn">
+            <a href="#" style="margin: 13px;">Learn more</a>
+            <a href="#">Buy</a>
+          </div>
+        </div>
+        <!-- <div class="image"> -->
+          <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/studio-display-og-202203?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1645125507093" style="width: 100%; " >
+        <!-- </div> -->
+      </div>
+      <div style="position: relative; height: 100%;"> 
+        <div class="buttons" style="position:relative; display:flex; justify-content: center; align-items: center; flex-direction: column;">
+          <h1>Iphone 13</h1>
+          <h3>Your new SuperPower</h3>
+          <div class="two_btn">
+            <a href="#">Learn more</a>
+            <a href="#">Buy</a>
+          </div>
+        </div>
+        <div class="image" style="height: 100%; width: 100%; ">
+          <img src="./AppleCard.webp" style="position: relative; left:6rem;"  >
+        </div>
+      </div>
+
+      <!-- <div>apple watch</div>
+      <div>reopening stores</div> -->
+    </section>
+    <footer >
+      <div style="display: flex; flex-direction: row; padding-left: 20%; ">
+        <div>
+          <ul style="font-size: large;">
+            <ol style="font-weight: bold;">Shop and Learn</ol>
+          <ol style="margin-top: 5%;">Store</ol>
+          <ol style="margin-top: 5%;">Mac</ol>
+          <ol style="margin-top: 5%;">iPad</ol>
+          <ol style="margin-top: 5%;">iPhone</ol>
+          <ol style="margin-top: 5%;">Watch</ol>
+          <ol style="margin-top: 5%;">AirPods</ol>
+          <ol style="margin-top: 5%;">TV & Home</ol>
+          <ol style="margin-top: 5%;">iPod touch</ol>
+          <ol style="margin-top: 5%;">AirTag</ol>
+          <ol style="margin-top: 5%;">Accessories</ol>
+          <ol style="margin-top: 5%;">Gift Cards</ol>
+          
+
+
+        </ul>
+      </div>
+        <div>
+          <div>
+            <ul style="font-size: large;">
+              <ol style="font-weight: bold;">Services</ol>
+            <ol style="margin-top: 5%;">Apple Music</ol>
+            <ol style="margin-top: 5%;">Apple TV+</ol>
+            <ol style="margin-top: 5%;">Apple Fitness+</ol>
+            <ol style="margin-top: 5%;">Apple News+</ol>
+            <ol style="margin-top: 5%;">Apple Arcade</ol>
+            <ol style="margin-top: 5%;">iCloud</ol>
+            <ol style="margin-top: 5%;">Apple One</ol>
+            <ol style="margin-top: 5%;">Apple Card</ol>
+            <ol style="margin-top: 5%;">Apple Books</ol>
+            <ol style="margin-top: 5%;">Apple Podcasts</ol>
+            <ol style="margin-top: 5%;">App Store</ol>
+          </ul>
+          <div>
+            <ul style="font-size: large;">
+              <ol style="font-weight: bold;">Accounts</ol>
+              <ol style="margin-top: 5%;">Manage Your Apple ID</ol>
+              <ol style="margin-top: 5%;">Apple Store Account</ol>
+              <ol style="margin-top: 5%;">iCloud.com</ol>
+            </ul>
+          </div>
+        </div>
+
+
+
+        
+
+
+        </div>
+        <div> </div>
+        <div>
+          <div>
+            <ul style="font-size: large;">
+              <ol style="font-weight: bold;">Apple store</ol>
+            <ol style="margin-top: 5%;">Find a Store</ol>
+            <ol style="margin-top: 5%;">Genius Bar</ol>
+            <ol style="margin-top: 5%;">Today at Apple</ol>
+            <ol style="margin-top: 5%;">Apple Camp</ol>
+            <ol style="margin-top: 5%;">Apple Store App</ol>
+            <ol style="margin-top: 5%;">Refurbished and Clearance</ol>
+            <ol style="margin-top: 5%;">Financing</ol>
+            <ol style="margin-top: 5%;">Apple Trade In</ol>
+            <ol style="margin-top: 5%;">Order Status</ol>
+            <ol style="margin-top: 5%;">Apple Podcasts</ol>
+            <ol style="margin-top: 5%;">Shopping Help</ol>
+          </ul>
+        </div>
+        </div>
+        <div style="font-size: large;">
+          <div>
+            <ul>
+              <ol style="font-weight: bold;">For Business</ol>
+              <ol style="margin-top: 5%;">Apple and Business</ol>
+              <ol style="margin-top: 5%;">Shop for Business</ol>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <ol style="font-weight: bold;">For Education</ol>
+              <ol style="margin-top: 5%;">Apple and Education</ol>
+              <ol style="margin-top: 5%;">Shop for K-12</ol>
+              <ol style="margin-top: 5%;">Shop for College</ol>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <ol style="font-weight: bold;">For Healthcare</ol>
+              <ol style="margin-top: 5%;">Apple in Healthcare</ol>
+              <ol style="margin-top: 5%;">Health on Apple Watch</ol>
+              <ol style="margin-top: 5%;">Health Records on iPhone</ol>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <ol style="font-weight: bold;">For Government</ol>
+              <ol style="margin-top: 5%;">Shop for Government</ol>
+              <ol style="margin-top: 5%;">Shop for Veterans and Military</ol>
+            </ul>
+          </div>
+
+
+
+
+
+        </div>
+        <div>
+          <div>
+            <div>
+              <ul style="font-size: large;">
+                <ol style="font-weight: bold;">Apple Values</ol>
+              <ol style="margin-top: 5%;">Accessibility</ol>
+              <ol style="margin-top: 5%;">Education</ol>
+              <ol style="margin-top: 5%;">Environment</ol>
+              <ol style="margin-top: 5%;">Inclusion and Diversity</ol>
+              <ol style="margin-top: 5%;">Privacy</ol>
+              <ol style="margin-top: 5%;">Racial Equity and Justice</ol>
+              <ol style="margin-top: 5%;">Supplier Responsibility</ol>
+            </ul>
+            <div>
+              <ul style="font-size: large;">
+                <ol style="font-weight: bold;">About Apple</ol>
+                <ol style="margin-top: 5%;">Newsroom</ol>
+                <ol style="margin-top: 5%;">Apple Leadership</ol>
+                <ol style="margin-top: 5%;">Career Opportunities</ol>
+                <ol style="margin-top: 5%;">Investors</ol>
+                <ol style="margin-top: 5%;">Ethics & Compliance</ol>
+                <ol style="margin-top: 5%;">Events</ol>
+                <ol style="margin-top: 5%;">Contact Apple</ol>
+              </ul>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      </footer>
+  </body>
+</html>
